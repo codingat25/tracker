@@ -30,11 +30,11 @@ export default {
     const router = useRouter()
     // Logout function
     const logout = async () => {
-      await supabase.auth.signOut
+      await supabase.auth.signOut()
       router.push({name: "Home"})
     }
 
     return {logout, user};
-  },
+  }
 };
 </script>
