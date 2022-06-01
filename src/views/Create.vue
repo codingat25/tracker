@@ -61,7 +61,14 @@
                 <input required type="text" class="p-2 w-full text-gray-500 focus:outline-none" 
                 v-model="item.weight">
               </div>
-                <img src="@/assets/images/trash-light-green.png" class="h-4 w-auto absolute" alt="">
+                <img src="@/assets/images/trash-light-green.png"
+                class="h-4 w-auto absolute -left-5 cursor-pointer" alt="">
+               <button type="submit" class="mt-6 py-2 px-6 rounded-sm self-start text-sm
+              text-white bg-at-light-green duration-200 border-solid
+               border-2 border-transparent hover:border-at-light-green hover:bg-white
+             hover:text-at-light-green">
+              Add Exercise
+            </button>
              </div>
           </div>
           
@@ -79,7 +86,7 @@ export default {
     // Create data
     const workoutName = ref("")
     const workoutType = ref("select-workout")
-    const exercises = ref([])
+    const exercises = ref([1])
     const statusMsg = ref(null)
     const errorMsg = ref(null)
     // Add exercise
